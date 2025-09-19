@@ -1,0 +1,118 @@
+@import "../omarchy/current/theme/waybar.css";
+
+* {
+  background-color: transparent;
+  color: @foreground;
+
+  border: none;
+  border-radius: 0;
+  min-height: 0;
+  font-family: CaskaydiaMono Nerd Font;
+  font-size: 16px;
+}
+
+window#waybar {
+  background: rgba(26, 27, 38, 0.6);
+}
+
+.modules-left {
+  margin-left: 8px;
+}
+
+.modules-right {
+  margin-right: 8px;
+}
+
+#workspaces button {
+  all: initial;
+  padding: 0 6px;
+  margin: 0 1.5px;
+  min-width: 9px;
+}
+
+#workspaces button.empty {
+  opacity: 0.5;
+}
+
+#tray,
+#cpu,
+#battery,
+#network,
+#bluetooth,
+#pulseaudio,
+#custom-omarchy,
+#custom-screenrecording-indicator,
+#custom-update,
+#custom-logout,
+#custom-gmail,
+#custom-youtube-music,
+#custom-calendar {
+  min-width: 12px;
+  margin: 0 7.5px;
+}
+
+#custom-expand-icon {
+  margin-right: 7px;
+}
+
+tooltip {
+  padding: 2px;
+}
+
+#custom-update {
+  font-size: 10px;
+}
+
+#clock {
+  margin-left: 8.75px;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+#custom-screenrecording-indicator {
+  min-width: 12px;
+  margin-left: 8.75px;
+  font-size: 10px;
+}
+
+#custom-screenrecording-indicator.active {
+  color: #a55555;
+}
+
+/* App icon styling */
+#custom-gmail,
+#custom-youtube-music,
+#custom-calendar {
+  font-size: inherit;
+  color: inherit;
+  margin: 0 7.5px;
+}
+
+/* Add space after clock */
+#clock {
+  margin-right: 20px;
+}
+
+#custom-media.Playing {
+  color: #82e2ff;
+}
+
+#custom-media.Paused {
+  color: #7c7f93;
+  font-style: italic;
+}
+
+/* Tooltip styling for media */
+tooltip {
+  background: rgba(26, 27, 38, 0.95);
+  border: 1px solid #82e2ff;
+  border-radius: 8px;
+}
+
+tooltip label {
+  color: #e4f0fb;
+  font-size: 11px;
+  padding: 5px;
+}
